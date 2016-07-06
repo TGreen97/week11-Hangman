@@ -1,0 +1,14 @@
+{
+  "name": "hangman-redux",
+  "version": "1.0.0",
+  "description": "Week 11 - Hangman node update",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hangman"
+  ],
+  "author": "",
+  "license": "ISC"
+}
