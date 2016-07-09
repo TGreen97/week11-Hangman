@@ -23,9 +23,9 @@ var game = require("./game.js");
 prompt.start();
 
 game = {
-  wordBank : game.game.wordBank/*["murphy", "murray", "belushi", "aykroyd", "curtin", "radner", "chase", "morris", "carvey", "hartman", "lovitz", "hooks", "ferrell", "hader", "wiig", "fey", "rudolph", "poehler", "macdonald", "meyers", "fallon", "short", "rock", "spade", "farley", "piscopo", "hammond", "newman" ]*/,
+  wordBank : game.game.wordBank,
   wordsWon : 0,
-  guessesRemaining : 9, //per word
+  guessesRemaining : 10, //per word
   currentWrd : null, //the word object
   startGame : function (wrd){
     //make sure the user has 10 guesses
@@ -35,8 +35,8 @@ game = {
     this.currentWrd = new Word.Word(this.wordBank[Math.floor(Math.random()* this.wordBank.length)]);
 
     this.currentWrd.getLets(); //populate currentWrd (made from Word constructor function) object with letters
-    console.log("Let's Play SNL Hangman!");
-    console.log("Guess the Last Name of these old school cast members, one letter at a time..")
+    console.log("***////  Let's Play SNL Hangman!  ////***");
+    console.log("GUESS the Last Name of these old school cast members, one letter at a time")
     this.keepPromptingUser();
 
   },
