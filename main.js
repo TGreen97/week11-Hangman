@@ -71,7 +71,7 @@ game = {
 
         console.log('Guesses remaining: ', self.guessesRemaining);
         console.log(self.currentWrd.wordRender());
-        console.log('here are the letters you guessed already: ');
+        console.log('here are the letters you guessed already: ', self.currentWrd.lettersGuessed);
 
         if ((self.guessesRemaining > 0) && (self.currentWrd.found == false)){
           self.keepPromptingUser();

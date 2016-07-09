@@ -6,6 +6,7 @@ var Word = function(wrd){
   //set a property called word and set it equal to what you think it should be
   this.word = wrd;
   this.lets = [ ];
+  this.lettersGuessed = "";
   this.found = false;
 
   this.getLets = function() {
@@ -41,6 +42,7 @@ var Word = function(wrd){
   this.checkIfLetterFound = function(guessLetter) {
     //set a variable whatToReturn to 0
     var whatToReturn = 0;
+    this.lettersGuessed += guessLetter;
     for (var i = 0; i < this.lets.length; i++) {
         if (this.lets[i].charac === guessLetter) {
           this.lets[i].appear = true;
