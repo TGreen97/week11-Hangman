@@ -2,7 +2,7 @@
   "name": "hangman-redux",
   "version": "1.0.0",
   "description": "Week 11 - Hangman node update",
-  "main": "index.js",
+  "main": "game.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,5 +10,8 @@
     "hangman"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^0.2.14"
+  }
 }
